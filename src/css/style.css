@@ -17,6 +17,7 @@ html{
   padding: 2rem;
   margin: 2rem;
   max-width: 500px;
+  text-align: center;
 }
 
 .card h1{
@@ -30,7 +31,7 @@ html{
 }
 
 .card p{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     color: hsl(193, 38%, 86%);
     font-size: 2rem;
     font-weight: 800;
@@ -50,8 +51,11 @@ button{
     border-radius: 3rem;
     transform: scaleX(-45deg);
     border: none;
-    position: absolute;
-    
+    transform: translateY(85%);  
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: white;
+}
 
