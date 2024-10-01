@@ -1,9 +1,16 @@
-const botaoDeConselhos = document.getElementById('btn-conselhos')
-const conselho = document.getElementsByTagName('p')
-const descricaoDoConselho = conselho[0]
+const botaoDeConselhos = document.querySelector('.botao-do-conselho');
+const conselho = document.querySelector('.id-do-conselho');
+const descricaoDoConselho = document.querySelector();
 
-async function conselhoAleatorioDaApi(){
-   const url = "https://api.adviceslip.com/advice"
-   const resposta = await fetch(url)
-   console.log(url)
+async function conselhoAleatorioDaApi() {
+
+      const url = "https://api.adviceslip.com/advice"
+      const resposta = await fetch(url)
+      const json = await resposta.json()
+      console.log(json)
+      
+      
 }
+
+
+conselhoAleatorioDaApi()
